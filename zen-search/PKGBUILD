@@ -1,0 +1,20 @@
+# Maintainer: ArchTech <info@archtech.com>
+pkgname=zen-ioc-bin
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="High-performance Forensic IP Extractor with Smart Filtering"
+arch=('x86_64')
+url="https://github.com/archtech/zen-ioc"
+license=('GPL3')
+depends=('gtk3' 'webkit2gtk' 'libayatana-appindicator' 'openssl' 'nss' 'atk' 'at-spi2-core' 'libx11' 'libxcb' 'gdk-pixbuf2' 'pango' 'cairo' 'libxkbcommon')
+options=('!strip' '!empty')
+source=("Zen-IOC_0.1.0_amd64.deb")
+sha256sums=('24a02d5aa222aa0c746a275b90b635904f0145097cdef9b7e9fa9b8a808ef01c')
+
+package() {
+  # Extraer el contenido del deb
+  tar -xJf data.tar.xz -C "${pkgdir}"
+
+  # Ajustar permisos si es necesario
+  chmod 755 "${pkgdir}/usr/bin/zen-search"
+}

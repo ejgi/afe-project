@@ -1,0 +1,50 @@
+# ==============================================================================
+# ADVANCED FORENSIC ECOSYSTEM (AFE) - IP PROTECTION GATE
+# ==============================================================================
+# This file ensures that the proprietary engine source code (sdk) 
+# is NEVER leaked to public repositories.
+
+
+
+# 🚫 CRITICAL: EXCLUDE PROPRIETARY ENGINE SOURCE (RECURSIVE)
+**/sdk/
+**/sdk_backup/
+**/validation_data/
+**/target/
+**/zen_forensic/
+**/z-ioc-v9/
+zen-ioc-arch-dist/
+*.tar.gz
+*.zip
+
+# 🚫 EXCLUDE RUST SOURCE FILES (EXCEPT TAURI FRONTEND WRAPPERS)
+**/*.rs
+!zen-search/src-tauri/src/**/*.rs
+
+# 📦 EXCLUDE LARGE DATA & BINARIES
+*.bin
+*.dd
+*.iso
+*.vmdk
+*.zip
+*.tar.gz
+*.csv
+*.tsv
+*.log
+!docs/assets/*.png
+!docs/assets/*.webp
+
+# 🛠️ STANDARD NODE/VITE EXCLUSIONS
+node_modules/
+.DS_Store
+dist/
+build/
+.env
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+**/zen_hunt_release/
+*.resolved*
+*.metadata.json
+artifacts/
+scratch/

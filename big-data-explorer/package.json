@@ -1,0 +1,105 @@
+{
+  "name": "big-data-explorer",
+  "displayName": "Big Data Explorer",
+  "description": "The ultra-fast alternative to Excel for massive CSV/TSV files. 60 FPS scrolling and instant filtering for multi-gigabyte datasets.",
+  "version": "1.2.1",
+  "publisher": "ejgi",
+  "author": {
+    "name": "Emisael Garcia"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "icon": "icon.png",
+  "repository": "https://github.com/ejgi/big-data-explorer",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Data Science",
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "csv",
+    "big data",
+    "viewer",
+    "performance",
+    "excel",
+    "large files"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "bigDataExplorer.csv",
+        "displayName": "Big Data CSV Editor",
+        "selector": [
+          {
+            "filenamePattern": "*.csv"
+          },
+          {
+            "filenamePattern": "*.tsv"
+          }
+        ],
+        "priority": "default"
+      }
+    ],
+    "configuration": {
+      "title": "Zen-Explorer (Big Data)",
+      "properties": {
+        "zenExplorer.supabaseUrl": {
+          "type": "string",
+          "default": "",
+          "description": "Tu URL de proyecto de Supabase para telemetría anónima."
+        },
+        "zenExplorer.supabaseKey": {
+          "type": "string",
+          "default": "",
+          "description": "Tu clave 'anon' de Supabase (Anon Key)."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "bigDataExplorer.openFolder",
+        "title": "Explorar Carpeta con Nitro-Engine",
+        "category": "Big Data Explorer"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "bigDataExplorer.openFolder",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "npm run build:webview && tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "build:webview": "vite build",
+    "dev:webview": "vite",
+    "package": "vsce package",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "@tsconfig/svelte": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/papaparse": "^5.3.15",
+    "@types/vscode": "^1.80.0",
+    "@vscode/vsce": "^2.22.0",
+    "svelte": "^4.0.5",
+    "typescript": "^5.1.3",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.99.3",
+    "@vscode/webview-ui-toolkit": "^1.2.2",
+    "papaparse": "^5.4.1",
+    "svelte-tiny-virtual-list": "^2.0.5"
+  }
+}

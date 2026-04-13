@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Forensic Ecosystem | Open Data Hunt Core</title>
+    <meta name="description" content="Advanced Forensic Ecosystem (AFE): The multi-platform hub for high-performance data analysis and forensic triage labs. Powered by Open Data Hunt Core.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">AFE<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#ecosystem">Ecosystem</a></li>
+                <li><a href="#performance">Core Metrics</a></li>
+                <li><a href="#downloads" class="btn-primary">Get Arsenal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section / The Nexus -->
+    <section class="hero" id="ecosystem">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge">AFE ECOSYSTEM // NITRO ENABLED</div>
+                <h1>Open Data Hunt Core</h1>
+                <p class="subtitle">The heart of modern forensic intelligence. High-speed O(1) analysis for massive-scale datasets across any environment.</p>
+                
+                <!-- Product Selector Tabs -->
+                <div class="product-selector">
+                    <button class="selector-btn active" data-target="extension">01_EXTENSION</button>
+                    <button class="selector-btn" data-target="standalone">02_STANDALONE</button>
+                    <button class="selector-btn" data-target="pipeline">03_PIPELINE</button>
+                </div>
+
+                <!-- Dynamic Content Blocks -->
+                <div class="dynamic-content" id="product-showcase">
+                    <!-- Extension Content (Default) -->
+                    <div class="content-block active" id="extension-info">
+                        <h2>Large Data Explorer</h2>
+                        <p>Turn VS Code into a forensic powerhouse. 60 FPS scrolling and instant SIMD search for 100GB+ CSV files.</p>
+                        <div class="hero-actions">
+                            <a href="https://marketplace.visualstudio.com/items?itemName=ejgi.big-data-explorer" class="btn-main">VS Marketplace</a>
+                            <span class="version-info">Stable Build: v1.2.1-nitro</span>
+                        </div>
+                    </div>
+
+                    <!-- Standalone Content -->
+                    <div class="content-block" id="standalone-info">
+                        <h2>zen-ioc Platform</h2>
+                        <p>Advanced forensic triage GUI. Zero-footprint, portable hunter for rapid indicators extraction in air-gapped systems.</p>
+                        <div class="hero-actions">
+                            <a href="#downloads" class="btn-main">Download Native Binaries</a>
+                            <span class="version-info">Alpha Release: v1.0.0</span>
+                        </div>
+                    </div>
+
+                    <!-- Pipeline Content -->
+                    <div class="content-block" id="pipeline-info">
+                        <h2>Nitro-Search SDK</h2>
+                        <p>Coming Soon. The power of Open Data Hunt Core available via CLI and API for custom forensic automation pipelines.</p>
+                        <div class="hero-actions">
+                            <span class="version-info badge-soon">PIPELINE EN ROUTE // Q3 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radar / Core Visual Visualizer -->
+            <div class="visual-assets">
+                <!-- Image placeholder will be styled in CSS to use the generated engine core image -->
+                <div class="core-nexus-wrapper">
+                    <div class="core-glow"></div>
+                </div>
+
+                <div class="radar-container mini-radar">
+                    <div class="radar-scan"></div>
+                    <div class="radar-grid"></div>
+                    <div class="radar-metrics">
+                        <div class="metric-item">
+                            <span class="label">CORE THROUGHPUT</span>
+                            <span class="value cyan" id="speed-meter">1.4M Rows/s</span>
+                        </div>
+                    </div>
+                    <div id="radar-nodes"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Showcase Section -->
+    <section class="terminal-showcase">
+        <div class="container">
+            <div class="terminal-window glass">
+                <div class="terminal-header">
+                    <div class="dots"><span></span><span></span><span></span></div>
+                    <div class="terminal-title">z-ioc --scan /mnt/evidence --mode ghost</div>
+                </div>
+                <div class="terminal-body" id="terminal-content">
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance" class="performance">
+        <div class="container text-center">
+            <h2 class="section-title">Superior Tactical Benchmarking</h2>
+            <div class="stats-grid">
+                <div class="stat-card glass">
+                    <div class="stat-value">O(1)</div>
+                    <div class="stat-label">Nitro-Direct Loading Logic</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-value">4.5s</div>
+                    <div class="stat-label">10 Million Rows (Cold HDD)</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-value">SIMD</div>
+                    <div class="stat-label">AVX2 Forensic Core</div>
+                </div>
+            </div>
+            <p class="performance-note text-center">
+                *Results obtained using sustained processing on 15GB+ dataset dumps over legacy hardware. Z-IOC maintains peak throughput without memory exhaustion or disk threshing.
+            </p>
+
+            <div class="test-rig glass">
+                <h3>Benchmark Test Rig (Legacy Verified)</h3>
+                <div class="rig-grid">
+                    <div class="rig-item"><span>CPU</span> <strong>Intel Core i5-3470 @ 3.20GHz</strong></div>
+                    <div class="rig-item"><span>RAM</span> <strong>14GB DDR3 1600MHz</strong></div>
+                    <div class="rig-item"><span>Disk</span> <strong>WDC WD2500AAKX HDD (Mechanical)</strong></div>
+                    <div class="rig-item"><span>System</span> <strong>ZRAM Optimized / AVX Core</strong></div>
+                    <div class="rig-item"><span>OS</span> <strong>Arch Linux (Kernel 6.x)</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container grid-3">
+            <div class="feature-item">
+                <div class="feature-icon">🔍</div>
+                <h3>The Ghost Engine</h3>
+                <p>Designed for air-gapped systems. Portable binary with no installation, no registry keys, and zero artifacts.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <h3>Wait-Free Pipeline</h3>
+                <p>Z-IOC uses a zero-copy data flow that keeps your CPU cores fed at 100% capacity without lock contention.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <h3>Hardware Independent</h3>
+                <p>Built with extreme SIMD optimizations. Whether you are on a high-end server or a 2012 field laptop, Z-IOC scales to the moon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="downloads">
+        <div class="container">
+            <h2 class="section-title text-center">The Distribution Arsenal</h2>
+            <div class="download-grid">
+                <!-- Windows Card -->
+                <div class="download-card glass">
+                    <h3>Windows (v1.0)</h3>
+                    <p class="desc">Native MSI Installer (Optimized for Win 10/11).</p>
+                    <a href="https://github.com/tu-usuario/z-ioc/releases/latest/download/Z-IOC_1.0.0_x64.msi" class="btn-download">Download .msi</a>
+                    <div class="checksum-container">
+                        <span class="checksum-label">SHA-256</span>
+                        <code>3a8b...1f4e (Stable v1)</code>
+                    </div>
+                </div>
+
+                <!-- Linux Card -->
+                <div class="download-card glass">
+                    <h3>Linux (v1.0)</h3>
+                    <p class="desc">Debian/Ubuntu/Fedora Native Packages.</p>
+                    <a href="https://github.com/tu-usuario/z-ioc/releases/latest/download/Z-IOC_1.0.0_amd64.deb" class="btn-download">Download .deb</a>
+                    <div class="checksum-container">
+                        <span class="checksum-label">SHA-256</span>
+                        <code>722f...b1d9 (Stable v1)</code>
+                    </div>
+                </div>
+            </div>
+            <div class="transparency-note text-center">
+                <p>Signatures verified by <strong>Z-IOC Forensic Research Initiative</strong></p>
+                <a href="#" class="link">Download Public Certificate (.cer)</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container grid-2">
+            <p>&copy; 2026 Advanced Forensic Ecosystem. Powered by Open Data Hunt Core.</p>
+            <div class="social-links">
+                <a href="#">Security Initiative</a> &bull; <a href="#">ForensicsFocus</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
