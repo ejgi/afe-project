@@ -20,10 +20,11 @@ The official Hub is available at:
 - **Infinite Scalability** (Analyzation of 100GB+ files without RAM bloating).
 
 ## 🛠️ Repository Structure
-- `/docs`: The source for the [Ecosystem HUB landing page](docs/index.html).
-- `/sdk`: Rust source code for the high-speed engine core.
-- `/big-data-explorer`: TypeScript/Svelte source for the VS Code extension.
-- `/zen_forensic`: Tauri-based source for the standalone `zen-ioc` platform.
+- : The source for the [Ecosystem HUB landing page](docs/index.html).
+- : TypeScript/Svelte source for the VS Code extension.
+- : Tauri-based source for the standalone  platform.
+- *Note: The  (Rust Core) is closed-source and distributed natively within the applications.*
+
 
 ---
 
