@@ -8,8 +8,6 @@
     "name": "Emisael Garcia"
   },
   "license": "SEE LICENSE IN LICENSE",
-  "icon": "icon.png",
-  "repository": "https://github.com/ejgi/big-data-explorer",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -50,7 +48,7 @@
         "zenExplorer.supabaseUrl": {
           "type": "string",
           "default": "",
-          "description": "Tu URL de proyecto de Supabase para telemetría anónima."
+          "description": "Tu URL de proyecto de Supabase para telemetr\u00eda an\u00f3nima."
         },
         "zenExplorer.supabaseKey": {
           "type": "string",
@@ -101,5 +99,11 @@
     "@vscode/webview-ui-toolkit": "^1.2.2",
     "papaparse": "^5.4.1",
     "svelte-tiny-virtual-list": "^2.0.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ejgi/afe-project.git",
+    "directory": "big-data-explorer"
+  },
+  "icon": "icon.png"
 }
