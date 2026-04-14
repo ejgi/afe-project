@@ -48,3 +48,10 @@ build/
 *.metadata.json
 artifacts/
 scratch/
+
+# 📦 CACHE & RELEASE ARTIFACTS
+*.zendx
+*.vsix
+install-zen-ioc-arch.sh
+generate_test_data.py
+test_daemon.py

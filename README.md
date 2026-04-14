@@ -10,8 +10,8 @@
 
 ## 🌐 Live Portal
 The official Hub is available at:  
-[**https://archtech.github.io/zen_engine_SDK_FINAL_READY/**](https://archtech.github.io/zen_engine_SDK_FINAL_READY/)  
-*(Note: Replace with your actual GitHub Pages URL after activation)*
+[**https://ejgi.github.io/afe-project/**](https://ejgi.github.io/afe-project/)  
+
 
 ---
 
