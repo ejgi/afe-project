@@ -1,9 +1,16 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
+import * as vscode from 'vscode';
 
-// CONFIGURACIÓN GLOBAL DE TELEMETRÍA ZEN-ENGINE
-// Estos datos conectan la extensión con el servidor central de telemetría.
-const SUPABASE_URL = 'https://ewbtpmhbcelkosbwuqzd.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_uJhMXqNhEZTmsai9Dl1cAw_tQwrAUtX';
+// CONFIGURACIÓN DE TELEMETRÍA ZEN-ENGINE
+// Las credenciales se leen desde la configuración del usuario en VS Code.
+// Si no están configuradas, la telemetría opera en modo local (solo consola).
+function getSupabaseConfig(): { url: string; key: string } {
+    const config = vscode.workspace.getConfiguration('zenExplorer');
+    return {
+        url: config.get<string>('supabaseUrl', ''),
+        key: config.get<string>('supabaseKey', '')
+    };
+}
 
 export interface TelemetryEvent {
     os: string;
@@ -23,8 +30,9 @@ class TelemetryService {
     private anonymousId: string = 'anon-' + Math.random().toString(36).substring(2, 15);
 
     constructor() {
-        if (SUPABASE_URL && SUPABASE_KEY) {
-            this.client = createClient(SUPABASE_URL, SUPABASE_KEY);
+        const { url, key } = getSupabaseConfig();
+        if (url && key) {
+            this.client = createClient(url, key);
         }
     }
 
