@@ -2,7 +2,7 @@
   "name": "big-data-explorer",
   "displayName": "Big Data Explorer",
   "description": "The ultra-fast alternative to Excel for massive CSV/TSV files. 60 FPS scrolling and instant filtering for multi-gigabyte datasets.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "publisher": "ejgi",
   "author": {
     "name": "Emisael Garcia"
@@ -48,7 +48,7 @@
         "zenExplorer.supabaseUrl": {
           "type": "string",
           "default": "",
-          "description": "Tu URL de proyecto de Supabase para telemetr\u00eda an\u00f3nima."
+          "description": "Tu URL de proyecto de Supabase para telemetría anónima."
         },
         "zenExplorer.supabaseKey": {
           "type": "string",
