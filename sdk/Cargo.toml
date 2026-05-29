@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Zen Explorer Team"]
 description = "High-performance analytical engine for massive datasets."
+keywords = ["forensics", "big-data", "simd", "performance", "analytics"]
+categories = ["science", "data-structures", "parser-implementations", "database"]
 
 [lib]
 name = "zen_engine"
