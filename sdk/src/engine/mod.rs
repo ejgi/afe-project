@@ -34,7 +34,16 @@ impl std::ops::Deref for OffsetIndex {
     }
 }
 
+/// The underlying atomic compute unit of the Zen Engine.
+///
+/// A `BigDataEngine` instance represents a single file on disk mapped directly into 
+/// virtual memory using `mmap2`. It abstracts the I/O layer, providing the higher-level
+/// modules with a contiguous, zero-copy byte slice `[u8]` of the entire file.
+/// 
+/// It holds the memory map and an optional vector of line offsets (`OffsetIndex`) 
+/// which allows O(1) random access to any row in a massive dataset.
 pub struct BigDataEngine {
+    /// The memory-mapped file data. Operating system manages paging automatically.
     pub mmap: Mmap,
     pub offsets: OffsetIndex,
     pub(crate) path: PathBuf,
