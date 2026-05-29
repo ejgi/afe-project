@@ -1,0 +1,13 @@
+/target
+**/*.rs.bk
+*.pdb
+*.csv
+*.tsv
+*.idx
+*.zones
+*.gz
+Cargo.lock
+*.pcap
+*.json
+raw.log
+analysis_output.txt

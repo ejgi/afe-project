@@ -6,20 +6,15 @@
 
 
 
-# 🚫 CRITICAL: EXCLUDE PROPRIETARY ENGINE SOURCE (RECURSIVE)
-**/sdk/
+# 🚫 EXCLUDE BUILD DIRECTORIES
+**/target/
 **/sdk_backup/
 **/validation_data/
-**/target/
 **/zen_forensic/
 **/z-ioc-v9/
 zen-ioc-arch-dist/
 *.tar.gz
 *.zip
-
-# 🚫 EXCLUDE RUST SOURCE FILES (EXCEPT TAURI FRONTEND WRAPPERS)
-**/*.rs
-!zen-search/src-tauri/src/**/*.rs
 
 # 📦 EXCLUDE LARGE DATA & BINARIES
 *.bin

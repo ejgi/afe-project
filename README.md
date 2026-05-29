@@ -27,7 +27,7 @@ The official Hub is available at:
 - `/docs`: The source for the [Ecosystem HUB landing page](docs/index.html).
 - `/big-data-explorer`: TypeScript/Svelte source for the VS Code extension.
 - `/zen-search`: Tauri-based source for the standalone `zen-ioc` platform.
-- *Note: The `/sdk` (Rust Core) is closed-source and distributed natively within the applications.*
+- `/sdk`: The source for the **Open Data Hunt Core** engine (Rust). Fully Open Source!
 
 ---
 

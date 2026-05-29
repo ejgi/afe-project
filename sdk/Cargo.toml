@@ -1,0 +1,46 @@
+[package]
+name = "zen-engine"
+version = "0.1.0"
+edition = "2021"
+authors = ["Zen Explorer Team"]
+description = "High-performance analytical engine for massive datasets."
+
+[lib]
+name = "zen_engine"
+path = "src/lib.rs"
+crate-type = ["lib", "staticlib", "cdylib"]
+[[bin]]
+name = "big-explorer-engine"
+path = "src/bin/big_explorer_engine.rs"
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+memmap2 = "0.9"
+anyhow = "1.0"
+itertools = "0.12"
+rayon = "1.10"
+clap = { version = "4.5", features = ["derive"] }
+indicatif = "0.17"
+colored = "2.1"
+fxhash = "0.2"
+regex = "1.12.3"
+memchr = "2.8.0"
+blake3 = "1.8.3"
+dashmap = "6.1.0"
+sysinfo = "0.38.3"
+wgpu = "24.0.0"
+bytemuck = { version = "1.21.0", features = ["derive"] }
+pollster = "0.4.0"
+flate2 = "1.0"
+zstd = "0.13"
+xz2 = "0.1"
+log = "0.4"
+env_logger = "0.11"
+libc = "0.2"
+byteorder = "1.5.0"
+evtx = "0.8"
+pcap-parser = "0.14"
+aho-corasick = "1.1.4"
+walkdir = "2.5"
+maxminddb = "0.24.0"
