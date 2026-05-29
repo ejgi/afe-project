@@ -22,6 +22,7 @@ The official Hub is available at:
 - **1.45M Rows/s** sustained processing.
 - **Zero-Footprint** forensics (Ghost Mode).
 - **Infinite Scalability** (Analyzation of 100GB+ files without RAM bloating).
+- **Anti-OOP Architecture** (Strictly Data-Oriented Design to eliminate cache misses and pointer chasing).
 
 ## 🛠️ Repository Structure
 - `/docs`: The source for the [Ecosystem HUB landing page](docs/index.html).
