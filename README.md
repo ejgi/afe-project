@@ -24,6 +24,10 @@ The official Hub is available at:
 - **Infinite Scalability** (Analyzation of 100GB+ files without RAM bloating).
 - **Anti-OOP Architecture** (Strictly Data-Oriented Design to eliminate cache misses and pointer chasing).
 
+## 🧠 Core Philosophy
+Zen Engine is built on a very strict ethos: **it is a program for the machine, not the machine for the program.** 
+We avoid unnecessary abstraction layers and bloated patterns. It is designed to be simple in its usage but mathematically complex under the hood—stripping away all bloatware to get as close to the silicon as possible. It is driven by data shapes rather than objects.
+
 ## 🛠️ Repository Structure
 - `/docs`: The source for the [Ecosystem HUB landing page](docs/index.html).
 - `/big-data-explorer`: TypeScript/Svelte source for the VS Code extension.
