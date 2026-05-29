@@ -1,0 +1,41 @@
+Advanced Forensic Ecosystem (AFE)
+Copyright 2026 ejgi — Advanced Forensic Ecosystem
+
+This product includes software developed by the AFE project contributors.
+Project home: https://ejgi.github.io/afe-project/
+Repository:   https://github.com/ejgi/afe-project
+
+-------------------------------------------------------------------------------
+
+This software makes use of the following open-source components,
+each governed by their respective licenses:
+
+  - rayon          (Apache 2.0)   — Data-parallelism library for Rust
+  - memmap2        (Apache 2.0)   — Cross-platform memory-mapped file I/O
+  - wgpu           (Apache 2.0)   — Cross-platform GPU compute (Vulkan/Metal/DX12)
+  - aho-corasick   (MIT/Unlicense)— Multi-pattern string search
+  - dashmap        (MIT)          — Concurrent HashMap for Rust
+  - blake3         (Apache 2.0)   — Cryptographic hash function
+  - rayon          (Apache 2.0)   — Data parallelism
+  - serde          (Apache 2.0)   — Serialization framework
+  - clap           (Apache 2.0)   — Command-line argument parser
+  - evtx           (MIT)          — Windows Event Log parser
+  - pcap-parser    (MIT)          — PCAP network capture parser
+  - maxminddb      (Apache 2.0)   — MaxMind GeoIP2 database reader
+  - zstd           (MIT)          — Zstandard compression
+  - flate2         (MIT/Apache)   — DEFLATE/GZIP compression
+  - xz2            (MIT)          — XZ/LZMA compression
+  - bytemuck       (MIT/Apache)   — Safe byte casting
+  - sysinfo        (MIT)          — System information retrieval
+  - indicatif      (Apache 2.0)   — Terminal progress bars
+  - colored        (MIT)          — Terminal text colorization
+  - walkdir        (MIT/Unlicense)— Recursive directory traversal
+  - fxhash         (Apache 2.0)   — High-speed non-cryptographic hashing
+  - anyhow         (Apache 2.0)   — Flexible error handling
+  - regex          (MIT/Apache)   — Regular expression engine
+  - memchr         (MIT/Unlicense)— Fast byte-search routines
+  - pollster       (Apache 2.0)   — Minimal async executor
+  - log / env_logger (MIT/Apache) — Logging facade and implementation
+
+Full license texts for all dependencies are available via:
+  cargo license --authors
